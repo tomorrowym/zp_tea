@@ -5,6 +5,10 @@ const bodyParser=require('body-parser');
 const userRouter=require('./router/user');
 //引用商品路由器模块
 const goodsRouter=require('./router/goods');
+//引入ajax
+const ajaxRouter=require('./router/ajax');
+//引入pro
+const proRouter=require('./router/pro');
 //创建web服务器
 const app=express();
 //设置端口
@@ -19,4 +23,8 @@ app.use(bodyParser.urlencoded({
 app.use('/user',userRouter);
 //将路由器挂载到web服务器下，并给所有路由添加前缀/goods
 app.use('/goods',goodsRouter);
+//挂载ajax
+app.use('/ajax',ajaxRouter);
+//挂载pro
+app.use('/pro',proRouter);
 

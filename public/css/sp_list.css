@@ -1,0 +1,168 @@
+*{margin: 0; padding: 0;}
+body{font-family: Arial, Tahoma, "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+#content{
+    background-color: #f5f5f5;
+    z-index: 1;
+}
+.zuipin_wraper{
+    width: 1226px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.now-page{
+    width: 1226px;
+    height: 40px;
+    /* border: solid #000000; */
+}
+.now-page li {
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    color: #d2d2d2;
+    margin-right: 5px;
+    list-style: none;
+}
+.now-page li a{
+    text-decoration: none;
+    color: #b0b0b0;
+}
+.sel_list{
+    width: 100%;
+    background-color: #fff;
+}
+.list_item{
+    width: 1226px;
+    height: 60px;
+}
+.list_right{
+    float: right;
+    list-style: none;
+    width: 310px;
+    height: 60px;
+    /* border: solid; */
+}
+.list_right li{
+    height: 60px;
+    margin-right: 40px;
+    margin-left: 0;
+    font-size: 14px;
+    float: left;
+    line-height: 60px;
+}
+.list_right li a{
+    color: #000;
+    text-decoration: none;
+}
+.list_right li:nth-child(3){
+    background-image: url(../images/img/xia.jpg);
+    background-repeat: no-repeat;
+    background-position: 26px center;
+    padding-right: 10px;
+}
+.goods_list{
+    width: 100%;
+    margin-top: 30px;
+    background-color: #f5f5f5;
+}
+.float_left{float: left;}
+.item{
+    position: relative;
+    overflow: hidden;
+    width: 292px;
+    height: 416px;
+    background-color: #fff;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    transition: all .3s;
+    box-sizing: border-box;
+    padding: 30px 20px 0;
+}
+.item dt a {
+    display: block;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.new-goodsSomething {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 42px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin: 21px 0 10px;
+}
+.goodsPing {
+    margin: 0 auto 20px;
+    width: 202px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    box-sizing: border-box;
+    color: #b0b0b0;
+    max-height: 12px;
+    padding: 0 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.nowPrice {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #c00000;
+    line-height: 14px;
+}
+.peopleGood {
+    line-height: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+}
+.cart-show {
+    width: 350px;
+    height: 52px;
+    position: absolute;
+    bottom: -52px;
+    left: 0;
+    transition: all .2s;
+    cursor: pointer;
+    margin-left: -20px;
+    text-align: center;
+}
+.red-buy {
+    width: 350px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 52px;
+    background-color: #ff3600;
+    color: #fff;
+    text-align: center;
+    transition: all .2s;
+}
+.red-buy span{
+    margin: 0 auto;
+    width: 80px;
+    height: 18px;
+    margin-left: -66px;
+}
+.item:hover .cart-show{
+  overflow: visible;
+  position: relative;
+  transform: translateY(-52px);
+  transition: all .2s linear;
+}
+.item:hover .new-goodsSomething{
+    
+    color:#ff3600;
+}

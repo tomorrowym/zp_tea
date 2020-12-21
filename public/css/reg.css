@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Tahoma, "Microsoft YaHei", "微软雅黑", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+.head{
+    width: 100%;
+    height: 100px;
+    
+}
+.head_reg_logo{
+    width: 1226px;
+    height: 46px;
+    margin-top: 34px;
+
+}
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+/* .con_wrap{
+    width: 1226px;
+    margin: 0 auto;
+ 
+} */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.left_con{
+   width: 100%;
+   height: 584px;
+   margin: 0 auto;
+   overflow-y: hidden;
+   border: 2px solid green;
+   background: rgb(134,1,4);
+   float: left;
+}
+.right_con{
+    width: 750px;
+    height: 524px;
+    border: 2px solid steelblue;
+    float: left;
+    position: relative;
+    left: 750px;
+    top: -560px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+.zhuce{
+    width: 150px;
+    height: 60px;
+    margin: 20px auto;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <div class="head">
+        <div class="head_reg_logo">
+            <img src="images/logo.png" alt="">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="content">
+        <div class="con_wrap clearfix" >
+            <div class="left_con clearfix">
+                <img src="images/log_reg_bg_img.jpg" alt="">
+            </div>
+            <div class="right_con">
+                <div class="zhuce">
+                    <h1>账号注册</h1>
+                    用户名:<input type="text" id="uname" onfocus="show_uname()" onblur="check_uname()"><span id="uname_msg" ></span><br>
+                    密码:<input type="text" id="upwd" onfocus="show_upwd()" onblur="check_upwd()"><span id="upwd_msg"></span><br>
+                    确认密码:<input type="text" id="cpwd" onfocus="show_cpwd()" onblur="check_cpwd()"><span id="cpwd_msg"></span><br>
+                    邮箱:<input type="text" id="email" onfocus="show_email()" onblur="check_email()"><span id="email_msg"></span><br>
+                    电话:<input type="text" id="phone" onfocus="show_phone()" onblur="check_phone()"><span id="phone_msg"></span><br>
+                    <button id="btn" onclick="reg()">注册</button>
+                </div>
+               
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/reg.js"></script>
+</body>
+</html>

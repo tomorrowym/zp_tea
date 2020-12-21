@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function reg(){
+            var _uname=uname.value;
+            var _upwd=upwd.value;
+            var _email=email.value;
+            var _phone=phone.value;
+            if(!_uname){
+                uname1.innerHTML="用户名不能为空";
+            }else{
+                uname1.innerHTML="√";
+            }
+            if(!_upwd){
+                upwd1.innerHTML="密码不能为空";
+            }else{
+                upwd1.innerHTML="√";
+            if(!_email){
+                email1.innerHTML="邮箱不能为空";
+            }else{
+                email1.innerHTML="√";
+            if(!_phone){
+                phone1.innerHTML="电话不能为空";
+            }else{
+                phone1.innerHTML="√";}
+            var xhr=new XMLHttpRequest();
+            console.log(_uname,_upwd,_email,_phone);
+            xhr.onreadystatechange=function(){
+                console.log(11112);
+                if(xhr.readyState==4 && xhr.status==200){
+                    var r=xhr.responseText;
+                    console.log(r);
+                    if(r==1 && uname1.innerHTML==upwd1.innerHTML==email1.innerHTML==phone1.innerHTML=="√"){
+                        alert('注册成功');
+                    }else{
+                        alert('注册失败');
+                    }
+                }
+            }
+            xhr.open('post',`/pro/v1/reg`,true);
+            var formdata=`uname=${_uname}&upwd=${_upwd}&email=${_email}&phone=${_phone}`;
+            xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+            xhr.send(formdata);
+        }
+    </script>
+</head>
+<body>
+    用户名:<input type="text" id="uname"><span id="uname1"></span><br>
+    密  码:<input type="text" id="upwd"><span id="upwd1"></span> <br>
+    邮  箱:<input type="text" id="email"><span id="email1"></span> <br>
+    电  话:<input type="text" id="phone"> <span id="phone1"></span><br>
+    <button onclick="reg()">注册</button>
+</body>
+</html>

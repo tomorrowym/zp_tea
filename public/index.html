@@ -4,11 +4,987 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    
 </head>
 <body>
-     <form method="get" action="/goods/index">
+    <div id="container">
+    <div class="header">
+        <div class="zuipin-header">
+            <div class="left">
+                <ul>
+                    <li><a href="#">醉品茶城</a></li>
+                </ul>
+            </div>
+            <div class="right" >
+                <ul >
+                    <li ><a href="login.html">登录</a><a href="reg.html">&nbsp&nbsp注册</a></li>
+                    <li style="width: 150px;float: left;margin-left: -110px;"><a href="#"></a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">关于醉品</a></li>
+                </ul>
+            </div>  
+               <div class="right-cart">
+                  <dl>
+                      <dt class="dt"><a href="#" class="shopcar">购物车</a></dt>
+                  </dl>
+               </div>
+           </div>
+        </div>
+        <div class="headerTap">
+            <div class="zp-wrap">
+                <div class="logo">
+                    <a href=""><img src="images/zp_logo_u2.png" alt=""></a>
+                </div>
+                <div class="search-box">
+                    <form action="">
+                        <input type="text" id="keyword" class="search-text">
+                    </form>
+                        <span id="sub" class="search-btn" onclick="search()"></span>
+                        <div id="kyw">
+                            <a href="">白茶</a>
+                            <a href="">广东单枞</a>
+                            <a href="">龙井</a>
+                            <a href="">金骏眉</a>
+                            <a href="">普洱</a>
+
+                        </div>
+                </div>
+                <div class="three-list">
+                    <ul>
+                        <li><p>全场商品90天保价</p></li>
+                        <li><p>满59元免邮费</p></li>
+                        <li><p>2000城市货到付款</p></li>
+                    </ul>
+                </div>
+                <div id="header-sel">
+                    <dl>
+                        <dt>全部商品分类</dt>
+                    </dl>
+                    <ul>
+                        <li><a href="#">品牌集成馆</a></li>
+                        <li><a href="#">大师名匠馆</a></li>
+                        <li><a href="#">积分商城</a></li>
+                        <li><a href="#">大客户专区</a></li>
+                    </ul>
+                <div id="banner">
+                    <dl>
+                        <dd class="on-tea">
+                            <span>一键选茶</span>
+                            <div>
+                                <a href="">自饮助手</a>
+                                <a href="">自饮锦囊</a>
+                                <a href="">送礼助手</a>
+                                <a href="">送礼锦囊</a>
+                            </div>
+                        </dd>
+                        <dd class="list-info">
+                            <dl class="dl-list">
+                                <dt class="big-title"><a href="#">白茶</a></dt>
+                                <dd class="dd"><ul class="ul">
+                                    <li class="l-t">白毫银针</li>
+                                    <li class="l-t">白牡丹</li>
+                                    <li class="l-t">寿眉</li>
+                                    <li class="l-t">其他白茶</li>
+                                </ul></dd>
+                                <dd class="c-list" >
+                                    <ul>
+                                        <li><img src="images/img/36.png" alt="">
+                                           <a href="">白毫银针</a> 
+                                        </li>
+                                        <li><img src="images/img/36.png" alt="">
+                                            <a href="">白牡丹</a> 
+                                         </li><li><img src="images/img/36.png" alt="">
+                                            <a href="">寿眉</a> 
+                                         </li>
+                                    </ul>
+                                    
+                                </dd>
+                            </dl>
+                            <dl class="dl-list">
+                                <dt class="big-title"><a href="#">黑茶</a></dt>
+                                <dd class="dd"><ul class="ul">
+                                    <li class="l-t">普洱茶</li>
+                                    <li class="l-t">安化黑茶</li>
+                                    <li class="l-t">柑普茶</li>
+                                 
+                                </ul></dd>
+                                <dd class="c-list" style="position:relative;top: -152px;">
+                                    <ul>
+                                        <li><img src="images/img/36.png" alt="">
+                                           <a href="">普洱茶</a> 
+                                        </li>
+                                        <li><img src="images/img/36.png" alt="">
+                                            <a href="">安化黑茶</a> 
+                                         </li><li><img src="images/img/36.png" alt="">
+                                            <a href="">柑普茶</a> 
+                                         </li>
+                                    </ul>
+                                    
+                                </dd>
+                            </dl>
+                            <dl class="dl-list">
+                                <dt class="big-title"><a href="#">红茶</a></dt>
+                                <dd class="dd"><ul class="ul">
+                                    <li class="l-t">金骏眉</li>
+                                    <li class="l-t">正山小种</li>
+                                    <li class="l-t">云南滇红</li>
+                                    <li class="l-t">祁门红茶</li>
+                                </ul></dd>
+                                <dd class="c-list" style="position:relative;top: -204px;">
+                                    <ul>
+                                        <li><img src="images/img/36.png" alt="">
+                                           <a href="">金骏眉</a> 
+                                        </li>
+                                        <li><img src="images/img/36.png" alt="">
+                                            <a href="">正山小种</a> 
+                                         </li><li><img src="images/img/36.png" alt="">
+                                            <a href="">云南滇红</a> 
+                                         </li>
+                                         <li><img src="images/img/36.png" alt="">
+                                            <a href="">祁门红茶</a> 
+                                         </li>
+                                    </ul>
+                                    
+                                </dd>
+                            </dl>
+                            <dl class="dl-list">
+                                <dt class="big-title"><a href="#">绿茶</a></dt>
+                                <dd class="dd"><ul class="ul">
+                                    <li class="l-t">龙井</li>
+                                    <li class="l-t">安吉白茶</li>
+                                    <li class="l-t">其他绿茶</li>
+                                </ul></dd>
+                                <dd class="c-list" style="position:relative;top: -256px;">
+                                    <ul>
+                                        <li><img src="images/img/36.png" alt="">
+                                           <a href="">龙井</a> 
+                                        </li>
+                                        <li><img src="images/img/36.png" alt="">
+                                            <a href="">安吉白茶</a> 
+                                         </li><li><img src="images/img/36.png" alt="">
+                                            <a href="">其他绿茶</a> 
+                                         </li>
+                                    </ul>
+                                    
+                                </dd>
+                            </dl>
+                            <dl class="dl-list">
+                                <dt class="big-title"><a href="#">乌龙茶</a></dt>
+                                <dd class="dd"><ul class="ul">
+                                    <li class="l-t">武夷岩茶</li>
+                                    <li class="l-t">安溪铁观音</li>
+                                    <li class="l-t">广东单丛</li>
+                                    <li class="l-t">漳平水仙</li>
+                                </ul></dd>
+                                <dd class="c-list" style="position:relative;top: -308px;">
+                                    <ul>
+                                        <li><img src="images/img/36.png" alt="">
+                                           <a href="">武夷岩茶</a> 
+                                        </li>
+                                        <li><img src="images/img/36.png" alt="">
+                                            <a href="">安溪铁观音</a> 
+                                         </li><li><img src="images/img/36.png" alt="">
+                                            <a href="">广东单丛</a> 
+                                         </li>
+                                         <li><img src="images/img/36.png" alt="">
+                                            <a href="">漳平水仙</a> 
+                                         </li>
+                                    </ul>
+                                    
+                                </dd>
+                            </dl>
+                            <dl class="dl-list">
+                                <dt class="big-title"><a href="#">创新品</a></dt>
+                                <dd class="dd"><ul class="ul">
+                                    <li class="l-t">多品类茶</li>
+                                    <li class="l-t">茶器组合</li>
+                                    <li class="l-t">其他创新品</li>
+                                </ul></dd>
+                                <dd class="c-list" style="position:relative;top: -360px;">
+                                    <ul>
+                                        <li><img src="images/img/36.png" alt="">
+                                           <a href="">多品类茶</a> 
+                                        </li>
+                                        <li><img src="images/img/36.png" alt="">
+                                            <a href="">茶器组合</a> 
+                                         </li><li><img src="images/img/36.png" alt="">
+                                            <a href="">其他创新品</a> 
+                                         </li>
+                                    </ul>
+                                    
+                                </dd>
+                            </dl>
+                            <dl class="dl-list">
+                                <dt class="big-title"><a href="#">茶器</a></dt>
+                                <dd class="dd"><ul class="ul">
+                                    <li class="l-t">陶瓷茶具</li>
+                                    <li class="l-t">玻璃茶具</li>
+                                    <li class="l-t">茶盘</li>
+                                    <li class="l-t">其他茶器</li>
+                                </ul></dd>
+                                <dd class="c-list" style="position:relative;top: -412px;">
+                                    <ul>
+                                        <li><img src="images/img/36.png" alt="">
+                                           <a href="">陶瓷茶具</a> 
+                                        </li>
+                                        <li><img src="images/img/36.png" alt="">
+                                            <a href="">玻璃茶具</a> 
+                                         </li><li><img src="images/img/36.png" alt="">
+                                            <a href="">茶盘</a> 
+                                         </li>
+                                    </ul>
+                                    
+                                </dd>
+                            </dl>
+                        </dd>
+                    </dl>
+                    <!-- <div class="c-list">
+                        <ul>
+                            <li><img src="images/img/36.png" alt="">
+                               <a href="">白毫银针</a> 
+                            </li>
+                            <li><img src="images/img/36.png" alt="">
+                                <a href="">白毫银针</a> 
+                             </li><li><img src="images/img/36.png" alt="">
+                                <a href="">白毫银针</a> 
+                             </li>
+                        </ul>
+                        
+                    </div> -->
+                    <div class="bd">
+                        <ul>
+                            <li><img src="./images/齐福.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="adv-item">
+            <div class="zp-waper">
+                <a href=""><img src="./images/1.jpg" alt=""></a>
+                <a href=""><img src="./images/2.jpg" alt=""></a>
+                <a href=""><img src="./images/3.jpg" alt=""></a>
+                <a href=""><img src="./images/202003132.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="special-item">
+            <div class="zuip-warp">
+                <div class="special-title">
+                    <div class="special-logo"><img src="./images/special.png" alt=""></div>
+                    <h2 class="special-head">限时<span>特价</span></h2>
+                    <div class="width-1"></div>
+                    <p class="special-text">总有你想不到的低价</p>
+                </div>
+                <div class="countdown">
+                    <span class="tip-text">距结束:</span>
+                    <span class="days">440天</span>
+                    <span class="time-date hour">01</span>
+                    <span class="time-code">:</span>
+                    <span class="time-date minutes">08</span>
+                    <span class="time-code">:</span>
+                    <span class="time-date seconds">45</span>
+                </div>
+                <div class="special-content">
+                    <div class="slide-item">
+                       <div class="tempwrap">
+                           <ul>
+                               <li>
+                                   <a href="" class="special-good">
+                                       <div class="special-img"><img src="./images/特价img/20201126174755_325846355713.jpg" alt=""></div>
+                                       <p class="special-descr">【买1送1，买2发5】【线上专供】醉品朴茶 一茶一城系列&城市限量版·深圳 正山小种 2020年 一级 50g【线上专供】醉品朴茶  一茶一城系列&城市限量版.厦门  金骏眉红茶 薯香 50g*5盒 </p>
+                                       <p class="special-alt">办公族喜爱的高甜红茶</p>
+                                       <p class="special-price">
+                                           <span class="special-now-price">￥99.00</span><del class="special-old-price">￥850.00</del></p>
+                                           
+                                       <div><img src="https://www.zpchaji.com/web/images/new-gift/time-limit.png" alt=""></div>
+                                   </a>
+                               </li>
+                               <li>
+                                <a href="" class="special-good">
+                                    <div class="special-img"><img src="./images/特价img/20201126174755_325846355713.jpg" alt=""></div>
+                                    <p class="special-descr">【买1送1，买2发5】【线上专供】醉品朴茶 一茶一城系列&城市限量版·深圳 正山小种 2020年 一级 50g【线上专供】醉品朴茶  一茶一城系列&城市限量版.厦门  金骏眉红茶 薯香 50g*5盒 </p>
+                                    <p class="special-alt">办公族喜爱的高甜红茶</p>
+                                    <p class="special-price">
+                                        <span class="special-now-price">￥99.00</span><del class="special-old-price">￥850.00</del></p>
+                                        
+                                    <div><img src="./images/特价img/time-limit.png" alt=""></div>
+                                </a>
+                               </li>
+                               <li>
+                                <a href="" class="special-good">
+                                    <div class="special-img"><img src="./images/特价img/20201126174755_325846355713.jpg" alt=""></div>
+                                    <p class="special-descr">【买1送1，买2发5】【线上专供】醉品朴茶 一茶一城系列&城市限量版·深圳 正山小种 2020年 一级 50g【线上专供】醉品朴茶  一茶一城系列&城市限量版.厦门  金骏眉红茶 薯香 50g*5盒 </p>
+                                    <p class="special-alt">办公族喜爱的高甜红茶</p>
+                                    <p class="special-price">
+                                        <span class="special-now-price">￥99.00</span><del class="special-old-price">￥850.00</del></p>
+                                        
+                                    <div><img src="./images/特价img/time-limit.png" alt=""></div>
+                                </a>
+                               </li>
+                               <li>
+                                     <a href="" class="special-good">
+                                    <div class="special-img"><img src="./images/特价img/20201126174755_325846355713.jpg" alt=""></div>
+                                    <p class="special-descr">【买1送1，买2发5】【线上专供】醉品朴茶 一茶一城系列&城市限量版·深圳 正山小种 2020年 一级 50g【线上专供】醉品朴茶  一茶一城系列&城市限量版.厦门  金骏眉红茶 薯香 50g*5盒 </p>
+                                    <p class="special-alt">办公族喜爱的高甜红茶</p>
+                                    <p class="special-price">
+                                        <span class="special-now-price">￥99.00</span><del class="special-old-price">￥850.00</del></p>
+                                        
+                                    <div><img src="./images/特价img/time-limit.png" alt=""></div>
+                                </a>
+                               </li>
+                               <li>
+                                <a href="" class="special-good">
+                               <div class="special-img"><img src="./images/特价img/20201126174755_325846355713.jpg" alt=""></div>
+                               <p class="special-descr">【买1送1，买2发5】【线上专供】醉品朴茶 一茶一城系列&城市限量版·深圳 正山小种 2020年 一级 50g【线上专供】醉品朴茶  一茶一城系列&城市限量版.厦门  金骏眉红茶 薯香 50g*5盒 </p>
+                               <p class="special-alt">办公族喜爱的高甜红茶</p>
+                               <p class="special-price">
+                                   <span class="special-now-price">￥99.00</span><del class="special-old-price">￥850.00</del></p>
+                                   
+                               <div><img src="./images/特价img/time-limit.png" alt=""></div>
+                           </a>
+                          </li>
+                          <li>
+                                     <a href="" class="special-good">
+                                    <div class="special-img"><img src="./images/特价img/20201126174755_325846355713.jpg" alt=""></div>
+                                    <p class="special-descr">【买1送1，买2发5】【线上专供】醉品朴茶 一茶一城系列&城市限量版·深圳 正山小种 2020年 一级 50g【线上专供】醉品朴茶  一茶一城系列&城市限量版.厦门  金骏眉红茶 薯香 50g*5盒 </p>
+                                    <p class="special-alt">办公族喜爱的高甜红茶</p>
+                                    <p class="special-price">
+                                        <span class="special-now-price">￥99.00</span><del class="special-old-price">￥850.00</del></p>
+                                        
+                                    <div><img src="./images/特价img/time-limit.png" alt=""></div>
+                                </a>
+                               </li>
+                           </ul>
+                       </div>
+                    </div>
+                </div>
+                <div class="bgc">
+                    <div class="drink-item">
+                        <div class="drink-wrap">
+                            <div class="zpwrap-dr">
+                                <div class="card-title">自饮</div>
+                                <div class="card-content">
+                                    <div class="card-left">
+                                        <a href="" class="tag-card">
+                                            <img src="./images/自饮侧边1.jpg" alt="">
+                                        </a>
+                                        <a href="" class="more-card">
+                                            <h2>自饮助手</h2>
+                                            <p class="more-text">自己喝的茶</p>
+                                            <p class="more-text">包装不用太复杂</p>
+                                            <img src="https://www.zpchaji.com/web/images/new-gift/more.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-center">
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                    </div>
+                                    <div class="card-right">
+                                        <div class="news-list">
+                                            <a href="" class="news-head">自饮锦囊</a>
+                                            <div class="news-content">
+                                                <a href="" class="news-item">
+                                                    <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                    <div class="news-artical">
+                                                        <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                        <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                    </div>
+                                                </a>
+                                                <!-- <a href="" class="news-head">自饮锦囊</a> -->
+                                                
+                                                    <a href="" class="news-item">
+                                                        <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                        <div class="news-artical">
+                                                            <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                            <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                        </div>
+                                                    </a>
+                                                    <!-- <a href="" class="news-head">自饮锦囊</a> -->
+                                                        <a href="" class="news-item">
+                                                            <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                            <div class="news-artical">
+                                                                <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                                <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                            </div>
+                                                        </a>
+                                                        <!-- <a href="" class="news-head">自饮锦囊</a> -->
+                                                        <a href="" class="news-item">
+                                                            <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                            <div class="news-artical">
+                                                                <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                                <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                            </div>
+                                                        </a>
+                                            </div>
+                                        </div>
+                                        <a href="" class="more-card">
+                                            <h2 class="">浏览更多</h2>
+                                            <p class="more-text">想要喝茶，不知如何选</p>
+                                            <p class="more-text">这里有一只锦囊！</p>
+                                            <img src="https://www.zpchaji.com/web/images/new-gift/more.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+    
+                        </div>
+                    </div>
+                    <div class="drink-item">
+                        <div class="drink-wrap">
+                            <div class="zpwrap-dr">
+                                <div class="card-title">送礼</div>
+                                <div class="card-content">
+                                    <div class="card-left">
+                                        <a href="" class="tag-card">
+                                            <img src="./images/自饮侧边1.jpg" alt="">
+                                        </a>
+                                        <a href="" class="more-card">
+                                            <h2>自饮助手</h2>
+                                            <p class="more-text">自己喝的茶</p>
+                                            <p class="more-text">包装不用太复杂</p>
+                                            <img src="https://www.zpchaji.com/web/images/new-gift/more.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-center">
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                    </div>
+                                    <div class="card-right">
+                                        <div class="news-list">
+                                            <a href="" class="news-head">自饮锦囊</a>
+                                            <div class="news-content">
+                                                <a href="" class="news-item">
+                                                    <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                    <div class="news-artical">
+                                                        <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                        <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                    </div>
+                                                </a>
+                                                <!-- <a href="" class="news-head">自饮锦囊</a> -->
+                                                
+                                                    <a href="" class="news-item">
+                                                        <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                        <div class="news-artical">
+                                                            <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                            <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                        </div>
+                                                    </a>
+                                                    <!-- <a href="" class="news-head">自饮锦囊</a> -->
+                                                        <a href="" class="news-item">
+                                                            <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                            <div class="news-artical">
+                                                                <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                                <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                            </div>
+                                                        </a>
+                                                        <!-- <a href="" class="news-head">自饮锦囊</a> -->
+                                                        <a href="" class="news-item">
+                                                            <p class="news-title">可以闭着眼买的自饮茶有哪些？</p>
+                                                            <div class="news-artical">
+                                                                <img src="./images/img/20200508105342_641616562434.gif" alt="">
+                                                                <p>因为平台上的茶很多，品牌茶和散茶都有，有非常多茶友经常私信留言，让我推荐一些性价比高，适合自饮的茶。今天就索性写一遍文章，推荐一些自己在喝的高性价比，可以闭眼入茶，买完一喝有惊喜，绝对不后悔的自饮茶。</p>
+                                                            </div>
+                                                        </a>
+                                            </div>
+                                        </div>
+                                        <a href="" class="more-card">
+                                            <h2 class="">浏览更多</h2>
+                                            <p class="more-text">想要喝茶，不知如何选</p>
+                                            <p class="more-text">这里有一只锦囊！</p>
+                                            <img src="https://www.zpchaji.com/web/images/new-gift/more.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+    
+                        </div>
+                    </div>
+                    <div class="drink-item">
+                        <div class="drink-wrap">
+                            <div class="zpwrap-dr">
+                                <div class="card-title">茶器/茶食</div>
+                                <div class="card-content">
+                                    <div class="card-left">
+                                        <a href="" class="pro-left-two">
+                                            <img src="./images/img/侧边茶器1.jpg" alt="">
+                                        </a>
+                                        <a href="" class="pro-left-two">
+                                            <img src="./images/img/侧边茶器2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-center" id="new-card-center">
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <a href="">
+                                            <div class="tag-img">
+                                                <img src="./images/20201217134358_83305282328.jpg" alt="">
+                                            </div>
+                                            <div class="special-img">
+                                                <img src="./images/2018-07-02 15_46_57_395595258733.jpg" alt="">
+                                            </div>
+                                            <p class="special-descr">醉品朴茶 一山一品系列 武夷岩茶 九曲半岩肉桂 中火 一级 RG2260-80g</p>
+                                            <p class="special-alt">知名小产区 玩家茶客学习品种、山场范本</p>
+                                            <p class="card-price">￥130</p>
+                                        </a>
+                                        <div class="add-card">
+                                            <a href="" class="samll-card">
+                                                <p class="small-card-text">
+                                                    醉品集团 积分换购 茶道配件 黑檀小号扁茶针
+                                                </p>
+                                                <p class="small-card-price">500积分</p>
+                                                <img src="./images/img/2019-05-0710_07_57_130767233280.jpg" alt="">
+                                            </a>
+                                            <a href="" class="more-card">
+                                                <h2>浏览更多</h2>
+                                                <p class="more-text">茶道配件</p>
+                                                <img src="https://www.zpchaji.com/web/images/new-gift/more.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+    
+                        </div>
+                    </div>
+                    <div class="hot-item">
+                        <div class="zuipin-wraper">
+                            <div class="hot-head clearfix">
+                                <span>热评产品</span>
+                                <span></span>
+                                <span>评价，你的好茶</span>
+                            </div>
+                            <div class="hot-content">
+                                <div class="slider-item">
+                                    <div class="tempWrap" style="overflow:hidden;position:relative; width:1240px">
+                                        <ul class="clearfix" style="width:4960px;
+                                            position:relative;
+                                            overflow:hidden;
+                                            padding:0px;
+                                            margin:0px;">
+                                            <li style=" float:left;width:296px;">
+                                                <a href="" class="hot-news">
+                                                    <div class="news-img">
+                                                        <img src="./images/goods_img/20200313140416_136157313294.jpg" alt="">
+                                                    </div>
+                                                    <p class="hot-text">包装精美，没有破损，分量很足。打开包装就闻到一股很好味的气味，茶叶干净，没有杂质。口感浑厚浓郁，回味悠长，茶汤明亮干净，非常诱人。</p>
+                                                    <p class="hot-people">来自衣蛾的评价</p>
+                                                    <p class="hot-descr clearfix">
+                                                        <span>一匠一品 龙井 60g</span>
+                                                        <span></span>
+                                                        <span>￥299.00</span>
+                                                    </p>
+                                                    </a>
+                                            </li>
+                                            <li style=" float:left;width:296px;">
+                                                <a href="" class="hot-news">
+                                                    <div class="news-img">
+                                                        <img src="./images/goods_img/20200313140416_136157313294.jpg" alt="">
+                                                    </div>
+                                                    <p class="hot-text">包装精美，没有破损，分量很足。打开包装就闻到一股很好味的气味，茶叶干净，没有杂质。口感浑厚浓郁，回味悠长，茶汤明亮干净，非常诱人。</p>
+                                                    <p class="hot-people">来自衣蛾的评价</p>
+                                                    <p class="hot-descr clearfix">
+                                                        <span>一匠一品 龙井 60g</span>
+                                                        <span></span>
+                                                        <span>￥299.00</span>
+                                                    </p>
+                                                    </a>
+                                            </li>
+                                            <li style=" float:left;width:296px;">
+                                                <a href="" class="hot-news">
+                                                    <div class="news-img">
+                                                        <img src="./images/goods_img/20200313140416_136157313294.jpg" alt="">
+                                                    </div>
+                                                    <p class="hot-text">包装精美，没有破损，分量很足。打开包装就闻到一股很好味的气味，茶叶干净，没有杂质。口感浑厚浓郁，回味悠长，茶汤明亮干净，非常诱人。</p>
+                                                    <p class="hot-people">来自衣蛾的评价</p>
+                                                    <p class="hot-descr clearfix">
+                                                        <span>一匠一品 龙井 60g</span>
+                                                        <span></span>
+                                                        <span>￥299.00</span>
+                                                    </p>
+                                                    </a>
+                                            </li>
+                                            <li style=" float:left;width:296px;">
+                                                <a href="" class="hot-news">
+                                                    <div class="news-img">
+                                                        <img src="./images/goods_img/20200313140416_136157313294.jpg" alt="">
+                                                    </div>
+                                                    <p class="hot-text">包装精美，没有破损，分量很足。打开包装就闻到一股很好味的气味，茶叶干净，没有杂质。口感浑厚浓郁，回味悠长，茶汤明亮干净，非常诱人。</p>
+                                                    <p class="hot-people">来自衣蛾的评价</p>
+                                                    <p class="hot-descr clearfix">
+                                                        <span>一匠一品 龙井 60g</span>
+                                                        <span></span>
+                                                        <span>￥299.00</span>
+                                                    </p>
+                                                    </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hdbtn">
+                                    <a href="" class="prev sPrev"></a>
+                                    <a href="" class="next sNext"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-item">
+                        <div class="zuipin-wraper">
+                            <div class="hot-head clearfix">
+                                <span>醉品头条</span>
+                                <span></span>
+                                <span>带您了解醉品</span>
+                            </div>
+                            <div class="first-content clearfix">
+                                <a href="">
+                                    <div class="first-img"><img src="./images/20200604162538_514149100441.jpg" alt=""></div>
+                                    <p class="first-text">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                    <p class="first-descr">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                </a>
+                                <a href="">
+                                    <div class="first-img"><img src="./images/20200604162538_514149100441.jpg" alt=""></div>
+                                    <p class="first-text">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                    <p class="first-descr">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                </a>
+                                <a href="">
+                                    <div class="first-img"><img src="./images/20200604162538_514149100441.jpg" alt=""></div>
+                                    <p class="first-text">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                    <p class="first-descr">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                </a>
+                                <a href="">
+                                    <div class="first-img"><img src="./images/20200604162538_514149100441.jpg" alt=""></div>
+                                    <p class="first-text">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                    <p class="first-descr">醉品集团521“国际茶日”抖音独家直播，开启“社群直播+新零售体验”模式</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="clearfix"></div>
+        <div class="zp-footer">
+            <div class="zp-foot_wraper">
+                <div class="foot-service">
+                    <ul class="clearfix">
+                        <li><span>原产地直供</span></li>
+                        <li><span>1000家合作社联盟</span></li>
+                        <li><span>10万亩茶园直供</span></li>
+                        <li><span>90天商品保价</span></li>
+                        <li><span>30天商品退换货</span></li>
+                        <li><span>满59元免运费</span></li>
+                    </ul>
+                </div>
+               <div class="foot-links clearfix">
+                   <dl class="col-links">
+                       <dt>购物指南</dt>
+                       <dd><a href="">购物保障</a></dd>
+                       <dd><a href="">积分政策</a></dd>
+                       <dd><a href="">企业用户</a></dd>
+                   </dl>
+                   <dl class="col-links">
+                    <dt>配送方式</dt>
+                    <dd><a href="">快递资费</a></dd>
+                    <dd><a href="">配送时间</a></dd>
+                    <dd><a href="">配送范围</a></dd>
+                    <dd><a href="">验货签收</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>支付方式</dt>
+                    <dd><a href="">货到付款</a></dd>
+                    <dd><a href="">在线支付</a></dd>
+                    <dd><a href="">网银在线</a></dd>
+                    <dd><a href="">银行转账</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>售后服务</dt>
+                    <dd><a href="">退换货原则</a></dd>
+                    <dd><a href="">退换货要求</a></dd>
+                    <dd><a href="">运费规则</a></dd>
+                    <dd><a href="">退换货流程</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>关于醉品</dt>
+                    <dd><a href="">关于我们</a></dd>
+                    <dd><a href="">醉品动态</a></dd>
+                    <dd><a href="">媒体声音</a></dd>
+                    <dd><a href="">品牌集成</a></dd>
+                </dl>
+                <div class="col-contact">
+                    <div>
+                        <p class="phone">4006-066-068</p>
+                        <p>周一至周五 08:40-18:00
+                        </p>
+                    </div>
+                    <div class="wxcol-wap">
+                        <img src="./images/img/20200422wxkf.jpg" alt="">
+                        <p>扫码添加客服微信</p>
+                    </div>
+                   
+                    </div>
+                    <div class="col-wap">
+                        <img src="./images/img/phone_qr.jpg" alt="">
+                        <p>醉品茶城手机版</p>
+                </div>
+               </div>
+            </div>
+            <div class="footer-info-box">
+                <div class="zuip-w">
+                    <div class="footer-inf clearfix">
+                        <div style="width: 60px; height: 60px; float: left;"><img src="./images/img/zui.png" alt=""></div>
+                        <div class="col-us clearfix " >
+                            <ul class="clearfix list-about">
+                                <li><a href="">关于我们</a> |</li>
+                                <li><a href="">版权申明</a> |</li>
+                                <li><a href="">联系我们</a> |</li>
+                            </ul>
+
+                            <div class="copyright">
+                                <p>© 2010 - 2020 醉品茶城 厦门品茶集网络科技有限公司</p>
+                            </div>
+                            <div class="copyright">
+                                <p>增值电信业务经营许可证：闽B2-20200853</p>
+                            </div>
+                            <div style="padding-top: 5px;">
+                                <span style="margin-right:20px">zpchaji.com All Rights Reserved</span><a href="">闽ICP备20010086号-1</a>
+                            </div>
+                        </div>
+                        <div style="margin:-50px 18px 50px 78px;">
+                            <img src="https://www.zpchaji.com/web/images/common/pincha.png" alt="">
+                        </div>
+                        <div>
+                            <ul class="info-linkse clearfix">
+                                <li><a href="">
+                                    <span>海峡两岸茶业交流协会
+                                        <br>互联网分会
+                                    </span>
+                                </a></li>
+                                <li><a href="">
+                                    <span>315安全服务
+                                        <br>保障认证
+                                    </span>
+                                </a></li>
+                                <li><a href="">
+                                    <span>可信网站
+                                        <br>示范企业
+                                    </span>
+                                </a></li>
+                                <li><a href="">
+                                    <span>工商执照
+                                        <br>经营允许
+                                    </span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- <form method="get" action="/goods/index">
         <input type="text" name="title" >
         <input type="submit" value="搜索">
-    </form>
+    </form> -->
+    <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sp_list.css">
+</head>
+<body onload="show()">
+ 
+    <!-- <iframe src="head.html" frameborder="0" scrolling="no" width="100%" height="215px"></iframe> -->
+    <div id="content">
+        <div class="zuipin_wraper">
+            <div class="now-page">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li>/</li>
+                    <li><a href="index.html">搜索</a></li>
+                </ul>
+            </div>
+            <div class="sel_list">
+                <div class="list_item clearfix">
+                    <ul class="list_right">
+                        <li><a href="">销量</a></li>
+                        <li><a href="">新品</a></li>
+                        <li class="on"><a href="">价格</a></li>
+                        <li><a href="">评论最多</a></li>
+                    </ul>
+ 
+                </div>
+            </div>
+            <div class="goods_list clearfix">
+    
+            </div>
+        </div>
+        <!-- <iframe src="footer.html" frameborder="0" scrolling="no" width="100%" height="455px"></iframe> -->
+        
+    </div>
+    <script src="./js/sp_list.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.header').load('head.html');
+        $('.footer').load('footer.html');
+    </script>
+</body>
+</html>

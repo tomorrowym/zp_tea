@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            var _uid=uid.value;
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4 && xhr.status==200){
+                    var r=xhr.responseText;
+                    var arr=JSON.parse(r);
+                    console.log(r);
+                    console.log(arr);
+                    var htmlStr=`<table border="1" width="800px" align="center">
+       <tr>
+           <th>用户名</th>
+           <th>用户密码</th>
+           <th>邮箱</th>
+           <th>联系方式</th>
+           <th>操作</th>
+       </tr>`;
+       if(r.length>0){
+           for(var i=0;i<arr.length;i++){
+               htmlStr+=`
+               <tr>
+                   <td>${arr[i].uname}</td>
+                   <td>${arr[i].upwd}</td>
+                   <td>${arr[i].email}</td>
+                   <td>${arr[i].phone}</td>
+                   <td><a href="#">删除</a></td>
+                </tr>
+               `
+           }
+           htmlStr+=`</table>`;
+           d1.innerHTML=htmlStr;
+       }
+                    console.log(arr);
+                   
+                }
+                
+            }
+            xhr.open('get',`/pro/v1/search/${_uid}`,true);
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="uid"><br>
+    <button onclick="show()">查询</button>
+    <div id="d1"></div>
+</body>
+</html>
